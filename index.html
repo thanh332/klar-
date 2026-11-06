@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHINO KO | Beyond the Stars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">✦ OSHI NO KO</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#story">Story</a>
+        <a href="#characters">Charaktere</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">THE WORLD OF ENTERTAINMENT</p>
+            <h1>BEYOND THE <span>STARS</span></h1>
+            <p class="intro">
+                Ruhm. Geheimnisse. Träume. Willkommen in der Welt von Oshi no Ko.
+            </p>
+            <a href="#story" class="main-button">Universum entdecken ↓</a>
+        </div>
+        <div class="star-symbol" id="bigStar">✦</div>
+        <div class="hero-bottom">A STORY BEHIND THE SPOTLIGHT ✦</div>
+    </section>
+
+    <section class="section" id="story">
+        <p class="eyebrow">01 / THE STORY</p>
+        <h2>Hinter dem <span>Rampenlicht</span></h2>
+        <p class="description">
+            Oshi no Ko erzählt von der glamourösen, aber auch schwierigen Welt
+            der japanischen Unterhaltungsindustrie. Im Mittelpunkt stehen
+            die Zwillinge Aqua und Ruby, die ihren eigenen Weg in dieser Welt suchen.
+            Dabei entdecken sie Geheimnisse, begegnen Herausforderungen und
+            lernen, dass nicht alles so ist, wie es auf der Bühne scheint.
+        </p>
+
+        <div class="quote-card">
+            <span>✦</span>
+            <h3>EVERY STAR HAS A STORY.</h3>
+            <p>Was man auf der Bühne sieht, ist nur ein Teil der Wahrheit.</p>
+        </div>
+    </section>
+
+    <section class="section" id="characters">
+        <p class="eyebrow">02 / THE CAST</p>
+        <h2>Die <span>Charaktere</span></h2>
+
+        <div class="character-grid">
+            <article class="character-card pink">
+                <div class="character-icon">🌟</div>
+                <h3>Ai Hoshino</h3>
+                <p>Ein berühmter Idol-Star. Sie begeistert ihre Fans mit ihrem Charisma und ihrem Lächeln.</p>
+                <span class="tag">IDOL</span>
+            </article>
+
+            <article class="character-card blue">
+                <div class="character-icon">🌌</div>
+                <h3>Aqua Hoshino</h3>
+                <p>Ruhig, intelligent und entschlossen. Er interessiert sich für die Film- und Schauspielwelt.</p>
+                <span class="tag">ACTOR</span>
+            </article>
+
+            <article class="character-card purple">
+                <div class="character-icon">💎</div>
+                <h3>Ruby Hoshino</h3>
+                <p>Sie träumt davon, ein Idol zu werden und auf einer grossen Bühne zu stehen.</p>
+                <span class="tag">IDOL</span>
+            </article>
+
+            <article class="character-card orange">
+                <div class="character-icon">🎭</div>
+                <h3>Kana Arima</h3>
+                <p>Eine talentierte Schauspielerin, die schon früh Erfahrungen vor der Kamera gesammelt hat.</p>
+                <span class="tag">ACTRESS</span>
+            </article>
+
+            <article class="character-card blue">
+                <div class="character-icon">🦋</div>
+                <h3>Akane Kurokawa</h3>
+                <p>Eine sehr talentierte Schauspielerin mit einem besonderen Gespür für ihre Rollen.</p>
+                <span class="tag">ACTRESS</span>
+            </article>
+
+            <article class="character-card pink">
+                <div class="character-icon">📱</div>
+                <h3>Mem-cho</h3>
+                <p>Eine beliebte Content Creatorin, die sich auch in der Idol-Welt einen Namen macht.</p>
+                <span class="tag">CREATOR</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="universe">
+        <p class="eyebrow">03 / THE UNIVERSE</p>
+        <h2>Mehr als nur <span>Anime</span></h2>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>🎤</span>
+                <h3>Musik</h3>
+                <p>Idols, Auftritte und Songs spielen eine wichtige Rolle in der Geschichte.</p>
+            </div>
+            <div class="info-box">
+                <span>🎬</span>
+                <h3>Schauspiel</h3>
+                <p>Die Charaktere entdecken die Welt von Filmen, Serien und Theater.</p>
+            </div>
+            <div class="info-box">
+                <span>⭐</span>
+                <h3>Berühmtheit</h3>
+                <p>Die Serie zeigt, wie Fans, Medien und Öffentlichkeit Stars beeinflussen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+        <p class="eyebrow">04 / FAN TEST</p>
+        <h2>Wie gut kennst du <span>Oshi no Ko?</span></h2>
+
+        <div class="quiz-card">
+            <p id="question">Wer träumt davon, ein Idol zu werden?</p>
+            <div class="answers">
+                <button onclick="answer('A')">Aqua</button>
+                <button onclick="answer('B')">Ruby</button>
+                <button onclick="answer('C')">Akane</button>
+            </div>
+            <p id="result"></p>
+            <button class="next-button" onclick="nextQuestion()">Nächste Frage →</button>
+        </div>
+    </section>
+
+    <section class="secret-section">
+        <p>PSST ... HIER IST EIN GEHEIMNIS</p>
+        <button id="secretButton">✦ Nicht anklicken ... oder doch?</button>
+        <p id="secretText"></p>
+    </section>
+</main>
+
+<footer>
+    <p>✦ OSHI NO KO FAN WEBSITE ✦</p>
+    <p>Eine kleine Fanseite – nicht offiziell.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

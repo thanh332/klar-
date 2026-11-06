@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --pink: #ff55b8;
+    --purple: #9b5cff;
+    --dark: #090713;
+    --light: #f7eaff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(9, 7, 19, 0.92);
+    border-bottom: 1px solid #ffffff18;
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: var(--pink);
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #e8d9f5;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 40%, #8e2d9b55, transparent 30%),
+        radial-gradient(circle at 20% 80%, #ff4cb633, transparent 30%),
+        linear-gradient(135deg, #100b25, #090713 70%);
+}
+
+.hero-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: var(--pink);
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(42px, 8vw, 85px);
+    line-height: 1.15;
+    letter-spacing: -3px;
+}
+
+h1 span, h2 span {
+    color: var(--pink);
+    text-shadow: 0 0 25px #ff55b866;
+}
+
+.intro {
+    color: #c8b9d8;
+    margin: 25px 0 35px;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.main-button {
+    display: inline-block;
+    background: linear-gradient(100deg, var(--pink), var(--purple));
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px #ff55b855;
+}
+
+.star-symbol {
+    position: absolute;
+    right: 13%;
+    top: 23%;
+    font-size: 210px;
+    color: #ff70c9;
+    text-shadow: 0 0 35px #ff55b8, 0 0 100px #9b5cff;
+    animation: starFloat 4s ease-in-out infinite;
+    cursor: pointer;
+    user-select: none;
+}
+
+@keyframes starFloat {
+    50% {
+        transform: translateY(-20px) rotate(12deg);
+    }
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 10%;
+    color: #a99ab9;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.section {
+    padding: 100px 10%;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 750px;
+    color: #c8b9d8;
+    line-height: 2;
+}
+
+.quote-card {
+    margin-top: 45px;
+    padding: 35px;
+    border: 1px solid #ff55b855;
+    background: linear-gradient(120deg, #24112f, #110c20);
+    border-radius: 12px;
+}
+
+.quote-card span {
+    color: var(--pink);
+    font-size: 35px;
+}
+
+.quote-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin: 12px 0;
+    letter-spacing: 2px;
+}
+
+.quote-card p {
+    color: #c8b9d8;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.character-card {
+    background: #151021;
+    border: 1px solid #ffffff18;
+    border-radius: 12px;
+    padding: 28px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.character-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 10px 35px #ff55b822;
+}
+
+.character-icon {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.character-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.character-card p {
+    color: #b9a9ca;
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 90px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 12px;
+    border: 1px solid var(--pink);
+    border-radius: 30px;
+    color: var(--pink);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-box {
+    background: #151021;
+    border-radius: 12px;
+    padding: 30px;
+    border-bottom: 3px solid var(--purple);
+}
+
+.info-box span {
+    font-size: 35px;
+}
+
+.info-box h3 {
+    margin: 15px 0 10px;
+}
+
+.info-box p {
+    color: #b9a9ca;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.quiz-section {
+    background: linear-gradient(135deg, #180d2a, #100b1d);
+}
+
+.quiz-card {
+    max-width: 600px;
+    background: #0d0918;
+    padding: 35px;
+    border: 1px solid #9b5cff66;
+    border-radius: 12px;
+}
+
+#question {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+}
+
+.answers button, .next-button {
+    padding: 13px;
+    background: #21162e;
+    border: 1px solid #9b5cff66;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.2s;
+}
+
+.answers button:hover, .next-button:hover {
+    background: var(--purple);
+}
+
+.next-button {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 18px;
+    color: var(--pink);
+    font-weight: 600;
+}
+
+.secret-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #120b20;
+}
+
+.secret-section p {
+    color: #c8b9d8;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+#secretButton {
+    margin: 20px;
+    background: transparent;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    padding: 13px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#secretButton:hover {
+    background: var(--pink);
+    color: white;
+}
+
+#secretText {
+    min-height: 25px;
+    color: var(--pink);
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #080610;
+    color: #9989aa;
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .star-symbol {
+        font-size: 100px;
+        right: 8%;
+        top: 10%;
+        opacity: 0.5;
+    }
+
+    .character-grid, .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+}
+
+// QUIZ
+const questions = [
+    {
+        question: "Wer träumt davon, ein Idol zu werden?",
+        answers: ["Aqua", "Ruby", "Akane"],
+        correct: 1
+    },
+    {
+        question: "Wie heisst Rubys Zwillingsbruder?",
+        answers: ["Aqua", "Kana", "Mem-cho"],
+        correct: 0
+    },
+    {
+        question: "In welcher Branche spielt die Geschichte?",
+        answers: ["Weltraumforschung", "Unterhaltung", "Fussball"],
+        correct: 1
+    }
+];
+
+let currentQuestion = 0;
+let answered = false;
+
+function showQuestion() {
+    const q = questions[currentQuestion];
+
+    document.getElementById("question").textContent = q.question;
+
+    const buttons = document.querySelectorAll(".answers button");
+
+    buttons.forEach((button, index) => {
+        button.textContent = q.answers[index];
+        button.disabled = false;
+    });
+
+    document.getElementById("result").textContent = "";
+    answered = false;
+}
+
+function answer(choice) {
+    if (answered) return;
+
+    answered = true;
+
+    const q = questions[currentQuestion];
+    const selected = choice.charCodeAt(0) - 65;
+
+    if (selected === q.correct) {
+        document.getElementById("result").textContent =
+            "Richtig! ⭐ Du kennst dich aus!";
+    } else {
+        document.getElementById("result").textContent =
+            "Nicht ganz! Versuch es bei der nächsten Frage wieder. 💗";
+    }
+}
+
+function nextQuestion() {
+    currentQuestion++;
+
+    if (currentQuestion >= questions.length) {
+        currentQuestion = 0;
+    }
+
+    showQuestion();
+}
+
+showQuestion();
+
+
+// GEHEIMNIS
+let secretClicks = 0;
+
+document.getElementById("secretButton").addEventListener("click", function() {
+    secretClicks++;
+
+    const secretText = document.getElementById("secretText");
+
+    if (secretClicks < 5) {
+        secretText.textContent = "Noch " + (5 - secretClicks) + " Klicks ... ✨";
+    } else {
+        secretText.textContent =
+            "🌟 Du hast das Geheimnis entdeckt! Ein echter Oshi no Ko Superfan!";
+        secretClicks = 0;
+    }
+});
+
+
+// STERN-EASTEREGG
+document.getElementById("bigStar").addEventListener("click", function() {
+    this.textContent = "💖";
+    this.style.transform = "scale(1.4) rotate(30deg)";
+
+    setTimeout(() => {
+        this.textContent = "✦";
+        this.style.transform = "";
+    }, 1000);
+});
+
+
+// KLEINE STERNE BEIM KLICK
+document.addEventListener("click", function(event) {
+    const star = document.createElement("span");
+
+    star.textContent = "✦";
+    star.style.position = "fixed";
+    star.style.left = event.clientX + "px";
+    star.style.top = event.clientY + "px";
+    star.style.color = "#ff70c9";
+    star.style.pointerEvents = "none";
+    star.style.fontSize = "22px";
+    star.style.zIndex = "9999";
+    star.style.animation = "clickStar 0.8s ease-out forwards";
+
+    document.body.appendChild(star);
+
+    setTimeout(() => star.remove(), 800);
+});
